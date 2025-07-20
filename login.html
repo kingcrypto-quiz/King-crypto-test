@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - King Crypto Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="firebase-config.js"></script>
+  <script defer src="paystack.js"></script>
+  <script defer src="login.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="matric" placeholder="Matric Number" required />
+    <input type="text" id="rrr" placeholder="RRR Number" required />
+    <input type="email" id="email" placeholder="Email for Paystack" required />
+    <button onclick="startPayment()">Pay ₦200 to Access</button>
+  </div>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</body>
+</html>

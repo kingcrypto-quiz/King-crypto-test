@@ -1,5 +1,3 @@
-
-// Firebase config for King Crypto Test
 const firebaseConfig = {
   apiKey: "AIzaSyCpwh0CuHHA0BAW5MHKxw3yJp7hCu2yeRs",
   authDomain: "king-crypto-test.firebaseapp.com",
@@ -9,5 +7,4 @@ const firebaseConfig = {
   messagingSenderId: "216127578138",
   appId: "1:216127578138:web:4c9e4fdf405df1a086b1a3"
 };
-
 firebase.initializeApp(firebaseConfig);
