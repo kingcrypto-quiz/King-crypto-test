@@ -1,1 +1,1 @@
-Full source code and setup for King Crypto Test — v5 Final Build.
+King Crypto Test Full Package - Placeholder files representing full quiz system features.
