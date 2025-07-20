@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - King Crypto Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="firebase-config.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <h2>Admin Panel</h2>
+  <div>
+    <input id="new-question" placeholder="Enter Question" />
+    <input id="optA" placeholder="Option A" />
+    <input id="optB" placeholder="Option B" />
+    <input id="optC" placeholder="Option C" />
+    <input id="optD" placeholder="Option D" />
+    <input id="correct" placeholder="Correct (A-D)" />
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+  <div id="questions-list"></div>
+</body>
+</html>
