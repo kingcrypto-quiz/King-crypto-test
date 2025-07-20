@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate - King Crypto Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="certificate">
+    <h1>🎓 Certificate of Completion</h1>
+    <p>This certifies that <strong id="user-name"></strong></p>
+    <p>has successfully completed the quiz</p>
+    <p>on <strong id="cert-subject"></strong> with a score of <strong id="cert-score"></strong></p>
+    <button onclick="window.print()">🖨 Print / Download</button>
+  </div>
+  <script>
+    const url = new URLSearchParams(window.location.search);
+    document.getElementById("user-name").textContent = url.get("user") || "Student";
+    document.getElementById("cert-subject").textContent = url.get("subject") || "a subject";
+    document.getElementById("cert-score").textContent = url.get("score") || "0";
+  </script>
+</body>
+</html>
